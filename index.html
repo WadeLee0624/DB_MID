@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>我訂.com後台</title>
+		<link rel="stylesheet" href="css/page.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+    
+	<body background="PROJ/img/pic2.jpg">
+		<div class="left" style="height:900px; top:0;">
+			<div onclick="location.href='index.html';" style="background-color:	#000000; height: 80px;" class="bigTitle" >我訂.com後台</div>
+			<div class="lines">
+				<div onclick="location.href='Memberindex.html';"><img src="img/icon-1.png" />會員管理</div>
+				<div onclick="location.href='Orderindex.html';"><img src="img/icon-2.png" />訂單管理</div>
+				<div onclick="location.href='Productindex.html';"><img src="img/icon-3.png" />商品管理</div>
+				<div onclick="location.href='Categoryindex.html';"><img src="img/icon-3.png" />商品種類管理</div>
+				<div onclick="location.href='Storeindex.html';"><img src="img/icon-4.png" />店鋪管理</div>
+				<div onclick="location.href='Stockindex.html';"><img src="img/icon-1.png" />庫存查詢</div>
+				
+			</div>
+		</div>
+		<div class="top" style="background-color:#3d598a; height: 80px;">
+			<div class="thisUser"  style="color:#FFFFFF;">用戶：管理員 </div><div><a href="Logout.jsp">登出回首頁</a></div> 
+		</div>
+		<div name = "usdiv" id="usdiv" style="position:absolute; left:21%; top:150px; background-color:	#3d598a; height: 200px; width:300px; font-size:18px; color:#FFFFFF;text-align:center; border:outset 4px white;">
+		<br><br>
+        用戶數
+		<br><br>
+        <object type="text/html" data="userstat.jsp" width="120" height="120"></object>
+		<div style="text-align:center;"></div>
+		</div>
+		
+		<div name = "storediv" id="storediv" style="position:absolute;left:48%;top:150px; background-color:#3d598a; height: 200px; width:300px; font-size:18px; color:#FFFFFF;text-align:center; border:outset 4px white;">
+		<br><br>
+        分店數
+		<br><br>
+        <object type="text/html" data="storestat.jsp" width="120" height="120"></object>
+		<div style="text-align:center;"></div>
+		</div>
+		
+		<div name = "ordiv" id="ordiv" style="position:absolute;left:75%;top:150px; background-color:#3d598a; height: 200px; width:300px; font-size:18px; color:#FFFFFF;text-align:center; border:outset 4px white;">
+		<br><br>
+        未出餐訂單數
+		<br><br>
+        <object type="text/html" data="orderstat.jsp" width="120" height="120"></object>
+		<div style="text-align:center;"></div>
+		</div>
+		
+		<div name = "hotprstatdiv" id="hotprstatdiv" style="position:absolute;left:30%;top:500px; background-color:#3d598a; height: 300px; width:400px; font-size:18px; color:#FFFFFF;text-align:center; border:outset 4px white;">
+		<br><br>
+        <a style="font-size:30px; color:#FFFFFF; text-align:center;">最受歡迎產品</a>
+		<br><br>
+        <object type="text/html" data="hotprstat.jsp" width="300" height="300"></object>
+		<div style="text-align:center;"></div>
+		</div>
+		
+		<div name = "hotprstatdiv" id="hotprstatdiv" style="position:absolute;left:65%;top:500px; background-color:#3d598a; height: 300px; width:400px; font-size:18px; color:#FFFFFF;text-align:center; border:outset 4px white;">
+		<br><br>
+        <a style="font-size:30px; color:#FFFFFF; text-align:center;">總銷售額</a>
+		<br><br>
+        <object type="text/html" data="totalstat.jsp" width="300" height="300"></object>
+		<div style="text-align:center;"></div>
+		</div>
+		
+		
+		
+		<div id="viewDiv" onclick="load_home();">
+		<center>
+		</center>
+        <object type="text/html" data="Administrator.jsp" width="200" height="200"></object>
+		<div style="text-align:center;"></div>
+		</div>
+	</body>
+
+</html>
